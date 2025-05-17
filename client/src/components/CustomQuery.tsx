@@ -589,19 +589,19 @@ export default function CustomQuery() {
     }
   };
 
-  // Function to count affected references
-  const countAffectedReferences = async (tableName: string, column: string, referencedColumn: string, value: string): Promise<number> => {
+  // Function to count affected references using dedicated /count endpoint
+  const countAffectedReferences = async (
+    tableName: string,
+    column: string,
+    _referencedColumn: string, // kept for signature compatibility, not used
+    value: string
+  ): Promise<number> => {
     try {
-      const query = {
-        operation: 'SELECT' as 'SELECT',
+      const res = await axios.post("http://localhost:3000/api/query-builder/count", {
         table: tableName,
-        fields: ['COUNT(*) as count'],
-        conditions: [{ field: column, operator: '=', value }],
-        joins: []
-      };
-      
-      const res = await axios.post("http://localhost:3000/api/query-builder/query", query);
-      return res.data[0]?.count || 0;
+        conditions: [{ field: column, operator: "=", value }]
+      });
+      return res.data?.count ?? 0;
     } catch (e) {
       console.error(`Error counting references in ${tableName}.${column}:`, e);
       return 0;
