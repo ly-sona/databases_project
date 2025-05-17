@@ -26,12 +26,12 @@ The system includes a logical model, ER/EER models, dependency diagram, DDL/DML 
 🗄️ Relational databases are ideally suited for our project due to their inherent integrity mechanisms—such as primary and foreign keys, CHECK constraints, and triggers—which prevent department, interview, and payroll data from becoming inconsistent. The capabilities of SQL, including views and window functions, enable us to generate summaries (like average salaries, interview rounds completed, and part-cost aggregations) without excessive coding. Overall, the relational model aligns seamlessly with our highly tabular and relationship-intensive dataset, providing us with the potential for future scalability.
 
 ## 📊 EER Diagram
-[EER Diagram to be inserted here]
+![EER Diagram](diagrams/EER.png)
 
 *Note: EER diagram implementation does not include cardinality constraints due to time constraints.*
 
 ## 🔗 Logical Dependency Diagram
-[Logical Dependency Diagram to be inserted here]
+![Logical Dependency Diagram](diagrams/Dependency%20Diagram.png)
 
 *Note: Logical dependencies implementation is incomplete due to time constraints.*
 
