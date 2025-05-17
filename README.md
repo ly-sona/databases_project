@@ -20,20 +20,16 @@ The system includes a logical model, ER/EER models, dependency diagram, DDL/DML 
 | 5 | A customer can have only one "preferred sales representative" at any given time. | Avoids conflicting preferences and simplifies CRM workflows. |
 
 ### 2️⃣ Entity Inheritance
-✅ Yes. For example, people share common attributes: PersonID, name, age, gender, address, phones. They also split into overlapping roles—Employee, Customer, Potential Employee—and one person can belong to multiple roles concurrently.
+Yes. For example, people share common attributes: PersonID, name, age, gender, address, phones. They also split into overlapping roles—Employee, Customer, Potential Employee—and one person can belong to multiple roles concurrently.
 
 ### 3️⃣ Database Choice Justification
-🗄️ Relational databases are ideally suited for our project due to their inherent integrity mechanisms—such as primary and foreign keys, CHECK constraints, and triggers—which prevent department, interview, and payroll data from becoming inconsistent. The capabilities of SQL, including views and window functions, enable us to generate summaries (like average salaries, interview rounds completed, and part-cost aggregations) without excessive coding. Overall, the relational model aligns seamlessly with our highly tabular and relationship-intensive dataset, providing us with the potential for future scalability.
+Relational databases are ideally suited for our project due to their inherent integrity mechanisms—such as primary and foreign keys, CHECK constraints, and triggers—which prevent department, interview, and payroll data from becoming inconsistent. The capabilities of SQL, including views and window functions, enable us to generate summaries (like average salaries, interview rounds completed, and part-cost aggregations) without excessive coding. Overall, the relational model aligns seamlessly with our highly tabular and relationship-intensive dataset, providing us with the potential for future scalability.
 
 ## 📊 EER Diagram
 ![EER Diagram](diagrams/EER.png)
 
-*Note: EER diagram implementation does not include cardinality constraints due to time constraints.*
-
 ## 🔗 Logical Dependency Diagram
 ![Logical Dependency Diagram](diagrams/Dependency%20Diagram.png)
-
-*Note: Logical dependencies implementation is incomplete due to time constraints.*
 
 ## 🎬 Demo Video
 [Demo Video to be inserted here]
