@@ -1,4 +1,5 @@
 # 🏢 XYZ Company Database Management System
+Anushrutha Boyapati, CS 4347 SP2025
 
 ## 📋 Project Summary
 This project implements a comprehensive relational database system for XYZ Company, a manufacturer that:
