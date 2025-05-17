@@ -32,7 +32,7 @@ Relational databases are ideally suited for our project due to their inherent in
 ![Logical Dependency Diagram](diagrams/Dependency%20Diagram.png)
 
 ## 🎬 Demo Video
-[Demo Video to be inserted here]
+[![Demo Video](https://img.youtube.com/vi/O0yGCJtcyq0/maxresdefault.jpg)](https://youtu.be/O0yGCJtcyq0)
 
 ## ✨ Features
 - 👥 Employee management and hierarchy tracking
