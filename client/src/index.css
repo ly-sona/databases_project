@@ -1,0 +1,5 @@
+@import "tailwindcss";
+/* Custom styles that don't conflict with Tailwind */
+body {
+  @apply bg-red-200;
+}
